@@ -9,8 +9,8 @@ export class ItemsController {
   }
 
   @Get(':id')
-  findOne(@Param() param): string {
-    return `Item: ${param.id}`;
+  findOne(@Param('id') id): string {
+    return `Item: ${id}`;
   }
 
   @Post()
